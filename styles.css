@@ -1,0 +1,327 @@
+/* Basic resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Header background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    width: 150px; /* Adjust the width of the logo */
+    height: auto; /* Keep the aspect ratio of the logo */
+    margin-left: 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.signup-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none; /* Remove underline from button */
+}
+
+/* Main Section */
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin: 20px auto; /* Center and separate from other sections */
+    position: relative; /* For the :after pseudo-element */
+    max-width: 1200px; /* Set a maximum width for the section */
+}
+
+.main-section:after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Position it just below the section */
+    left: 20px; /* Leave 20px from left */
+    right: 20px; /* Leave 20px from right */
+    height: 1px; /* Height of the line */
+    background-color: black; /* Color of the line */
+}
+
+/* Intro Text */
+.intro h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.video-call img {
+    width: 570px;
+    height: auto;
+}
+
+/* Features Section */
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    margin: 20px auto; /* Center and separate from other sections */
+    position: relative; /* For the :after pseudo-element */
+    max-width: 1200px; /* Set a maximum width for the section */
+}
+
+.features-section:after {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Position it just below the section */
+    left: 20px; /* Leave 20px from left */
+    right: 20px; /* Leave 20px from right */
+    height: 1px; /* Height of the line */
+    background-color: black; /* Color of the line */
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%; /* Set width to 100% */
+    max-width: 800px; /* Limit width of feature section */
+    padding: 20px;
+    margin-bottom: 40px; /* Add margin to separate from other features */
+    border-radius: 10px;
+}
+
+.image-container {
+    flex-basis: 30%;
+}
+
+.feature-text {
+    flex-basis: 60%;
+}
+
+.feature-icon {
+    width: 250px;
+    height: auto;
+}
+
+.avatar-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.avatar-grid img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.avatar-grid img:hover {
+    border: 2px solid #007bff;
+}
+
+/* Ready to Start Section */
+.ready-to-start-section {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto; /* Center and separate from other sections */
+    position: relative; /* For the :after pseudo-element */
+    max-width: 1200px; /* Set a maximum width for the section */
+    margin-bottom: -154px;
+}
+
+.ready-to-start-section h2 {
+    font-weight: bold; /* Makes the text bold */
+    text-align: center; /* Centers the text */
+    font-size: 2.5em; /* Increase font size (adjust as needed) */
+    margin-bottom: 20px; /* Optional: Adds space below the heading */
+}
+
+/* Additional Styles */
+h2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Overlay Image Button */
+.image-button-section {
+    display: flex;
+    justify-content: center; /* Center the content */
+    padding: 50px;
+    margin: 20px auto; /* Center and separate from other sections */
+    max-width: 1200px; /* Set a maximum width for the section */
+}
+
+.image-container {
+    position: relative; /* Position relative for absolute positioning of the button */
+    width: 100%; /* Make it responsive */
+    max-width: 3200px; /* Increase max width for the image container */
+}
+
+.overlay-image {
+    width: 400%; /* Make the image responsive */
+    height: 300px; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Add border-radius to the image */
+    margin-left: -437px;
+}
+
+.overlay-button {
+    position: absolute; /* Position button over the image */
+    top: 23%; /* Center the button vertically */
+    left: 50%; /* Center the button horizontally */
+    transform: translate(-50%, -50%); /* Offset the button's position */
+    background-color: #000000; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Round the corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 11px; /* Font size */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.overlay-button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+
+footer {
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    color: #000;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex-basis: 18%;
+}
+
+.footer-column h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.company-logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #000;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Optional hover color */
+}
+
+/* Responsive Footer for smaller screens */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-column {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+}
+
+
+
+.footer-line {
+    border: 0; /* Remove default border */
+    height: 3px; /* Thickness of the line */
+    background-color: #A9A9A9; /* Grey color (pencil grey) */
+    margin: 40px 0; /* Optional: Adds space above and below the line */
+    width: 100%; /* Ensures it spans across the entire width */
+}
+
